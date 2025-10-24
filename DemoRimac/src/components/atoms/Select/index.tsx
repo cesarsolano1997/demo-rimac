@@ -23,6 +23,9 @@ const Select: FC<Props> = ({ data, value,placeHolder,style, onChange }) =>
             valueField="value"
             data={data}
             placeholder={placeHolder ?? 'Seleccionar'}
+            placeholderStyle={{
+                fontSize: 13
+            }}
             onChange={(item: Item) => onChange(item.value)}
             value={value}
             style={{...styles.dropDown, ...style}}

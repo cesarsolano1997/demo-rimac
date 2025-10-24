@@ -6,6 +6,9 @@ import config from '../../tools/config';
 
 const CustomHeader: FC<NativeStackHeaderProps> = ({ }) =>
 {
+
+
+    
     return (
         <View style={styles.container}>
             <Image
@@ -30,13 +33,14 @@ const styles = StyleSheet.create({
         paddingTop: Platform.OS === 'android' ? 0 : 60,
         flexDirection: "row",
         justifyContent: "space-between",
+        alignItems: 'center',
         paddingHorizontal: config.stylesGlobal.paddingHorizontal,
         height: 100,
         backgroundColor: '#FAFBFF'
     },
     imageLogo: {
         width: 65,
-        height: 32
+        height: 32,
     },
     imageCellPhone: {
         width: 20,
